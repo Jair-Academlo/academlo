@@ -1,0 +1,377 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    display: flexbox;
+} 
+
+body{
+    background-color: #242635;
+    font-family:'Montserrat', sans-serif;
+  
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+}
+nav img{
+    width: 50px;
+    padding: 3%;
+    margin-top: 0.4rem;
+    margin-right: 0.7rem;
+
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+input#menu-hamburguesa~ul{
+    color: #ffffff;
+    background-color: #34b0be;
+    font: bold 16px verdana;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    transition: all 300ms linear;
+    
+}
+input#menu-hamburguesa:checked ~ ul{
+    right:0;
+    z-index: 100;
+}
+
+.navegacion{
+
+    color: #ffffff;
+    display: block;
+    text-align: center;
+}
+
+.navegacion li{
+ 
+    list-style: none;
+    padding: 3px;
+    margin:  3px;
+    border: 3px;
+    font: bold 16px verdana;
+    display: inline-block;
+
+}
+
+#nave {
+    color: aqua;
+}
+
+.principio{
+
+    margin-top: 70px;
+    padding-top: 35px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.contenedor1{
+    margin-top: 70px;
+    padding-top: 70px;
+
+    position: absolute;
+    top: 4%;
+    left: 1.5%;
+    z-index: 30;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.contenedor1 p~h1{
+    font-size: 50px;
+    font-weight: 600px;
+    color: #34b0be;
+    
+}
+
+img.pequeña{
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+    width: 350px;
+    height: 350px;
+    border-radius: 80%;
+  }
+  
+.contenedor2{
+    margin: auto;
+    max-width: min-content;
+    max-height: min-content;
+    display: flexbox;
+
+    
+}
+.contenedor3{
+    
+    margin-top: 70px;
+    padding-top: 70px;
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.contenedor3>p+h3{
+    color: #34b0be;
+
+}
+ .div-rectangulo{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.contenedor3>div .icono1, .icono2, .icono3{
+    padding: 1.4vw;
+    background: #ffffff;
+    border-radius: 100%;
+    
+}
+
+
+
+
+.div-rectangulo>.logo1, .logo2, .logo3{
+   
+    width: 15%;
+    border-radius: 10%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+section>h1{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: #34b0be;
+    font-size: 32px;
+    font-weight: 600px;
+    margin: 25px;
+}
+section>p{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.contenedor-servicios{
+ 
+    
+    display: flex;
+    Flex-direction: row; 
+    max-width: 45%;
+    max-height: min-content;
+
+}
+
+
+.ux-design {
+
+    background-image: url('../Portafolio\ 4/Vectores/Ellipse 14.svg') ;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
+    
+    padding: 2% 15%;
+    
+    background-color: #ffffff;
+
+    margin: 0 10% 0 15%;
+    border-radius: 4%;
+    position: relative;
+   
+    object-fit: scale-down;
+    height: 294px;
+    
+    
+    
+    
+    
+}
+.ux-design h4{
+    padding-top:10%;
+    padding-bottom: 15%;
+}
+
+.marketing {
+    background-image: url('../Portafolio\ 4/Vectores/Ellipse 14.svg') ;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
+    padding: 2% 15%;
+    height: 294px;
+    
+    background-color: #ffffff;
+    
+    margin: 0 5% 0 5%;
+    border-radius: 4%;
+    position: relative;
+    
+    object-fit: scale-down;
+   
+    
+}
+.marketing h4{
+    padding-top:10%;
+    padding-bottom: 15%;
+    
+}
+.research {
+    background-image: url('../Portafolio\ 4/Vectores/Ellipse 14.svg') ;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
+    height: 294px;
+    padding: 2%  15%;    
+    background-color: #ffffff;
+
+    margin: 0 15% 0 15%;
+    border-radius: 4%;
+    position: relative;
+    
+    object-fit: scale-down;
+}
+.research h4{
+    padding-top:10%;
+    padding-bottom: 15%;
+}
+
+.ux-design img, .marketing img, .research img {
+    position: relative;
+    top: 3%;
+    
+}
+
+.contenedor-habilidades{
+
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.barra{
+    width: 600px;
+    height: 20px;
+    border-radius: 10px;
+    background: #eee;
+}
+.progreso{
+    width: var(--w);
+    height: 100%;
+    border-radius: 10px;
+    background: #34b0be;
+    animation: Aumentar 5s ease;
+}
+@keyframes Aumentar {
+    0%{width: 0%;}
+    90%{width: -var(--w);}
+}
+
+.porcentaje{
+    position: relative;
+    top: 5vw;
+    left: 10%;
+    
+}
+
+.contenedor-portafolio{
+ 
+    max-width: 60%;
+    max-height: 60%;
+    display: flex;
+    
+}
+.contenedor-portafolio > .portafolio{
+    margin: 0 1%;
+}
+.portafolio img{
+    width: 240px;
+}
+.contenedor-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+
+.contenedor-contacto > .contacto-celular{
+    background-image: url('../Portafolio\ 4/Vectores/Ellipse 14.svg') ;
+    padding: 6%;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
+    background-color: #ffffff;
+    width: 20%;
+    border-radius: 7%;
+    margin-left: 15%;
+    
+    
+    
+
+}
+
+.contenedor-contacto > .contacto-celular  p{
+    color: blue;
+    justify-content: center;
+    font-size: 12px;
+}
+.contenedor-contacto > .contacto-email{
+    background-image: url('../Portafolio\ 4/Vectores/Ellipse 14.svg') ;
+    padding: 6% 1%;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    text-align: center;
+    background-color: #ffffff;
+    width: 20%;
+    border-radius: 7%;
+    margin-right: 15%;
+    position: relative;
+    top: 300px;
+    
+
+   
+}
+
+
+.contenedor-contacto > .contacto-email  p{
+    color: blue;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.footer{
+padding-top: 500px;
+margin: auto;
+border: 5px     ;
+color: aqua;
+display: flex;
+justify-content: center;
+
+}
+
+@media (min-width:480px){       
+   body{
+    max-width: min-content;
+    max-height: min-content;
+   }
+   
+  }
